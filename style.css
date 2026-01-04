@@ -1237,6 +1237,103 @@ section:nth-of-type(even) {
     .project-card { min-width: 280px; width: 280px; height: auto; }
 }
 
+/* Gestion des liens */
+
+/* Github, PDF, etc ... */
+.project-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.project-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    
+    background-color: white;
+    color: #1e293b;
+    
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    
+    opacity: 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.project-btn i {
+    font-size: 1.1rem;
+}
+
+.project-header:hover::before {
+    opacity: 1;
+}
+
+.project-header:hover .project-btn {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.project-btn:hover {
+    background-color: #f8fafc;
+    transform: translate(-50%, -50%) scale(1.05) !important;
+}
+
+/* Confidentiel */
+.project-btn.confidential {
+    cursor: default;
+    background-color: #f1f5f9;
+    color: #64748b;
+}
+
+.project-btn.confidential:hover {
+    transform: translate(-50%, -50%) !important;
+    background-color: #f1f5f9;
+}
+
+.project-btn.confidential i {
+    color: #ef4444;
+}
+
+/* Bientôt... */
+.project-btn.wip {
+    cursor: default;
+    background-color: #fff7ed;
+}
+
+.project-btn.wip:hover {
+    transform: translate(-50%, -50%) !important;
+    background-color: #fff7ed;
+}
+
+.project-btn.wip i {
+    color: #ea580c;
+}
+
 /* Contact */
 #contact {
     display: block;
