@@ -288,16 +288,25 @@ if (skillTabs.length > 0) {
 }
 
 /* Compteur de vues */
+const counterWrapper = document.querySelector('.view-counter-wrapper');
 const counterElement = document.getElementById('view-counter');
 
-if (counterElement) {
+if (counterWrapper && counterElement) {
     fetch('https://api.counterapi.dev/v1/ibrahim-benkherfellah-portfolio/views/up')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Erreur API');
+            }
+            return response.json();
+        })
         .then(data => {
+            // SUCCÈS : on affiche le nombre
             counterElement.innerText = data.count;
+            counterWrapper.style.opacity = '1'; 
         })
         .catch(error => {
-            console.error('Erreur compteur:', error);
-            counterElement.innerText = "--";
+            // ÉCHEC (Bloqueur de pub ou hors ligne) : on cache
+            console.log('Compteur masqué (AdBlock ou Erreur):', error);
+            counterWrapper.style.display = 'none'; 
         });
 }

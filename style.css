@@ -226,7 +226,8 @@ section:nth-of-type(even) {
     font-weight: 600;
     color: #64748b;
     cursor: default;
-    transition: color 0.3s ease;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
 }
 
 .dark .view-counter-wrapper {
