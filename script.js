@@ -286,3 +286,18 @@ if (skillTabs.length > 0) {
         });
     });
 }
+
+/* Compteur de vues */
+const counterElement = document.getElementById('view-counter');
+
+if (counterElement) {
+    fetch('https://api.counterapi.dev/v1/ibrahim-benkherfellah-portfolio/views/up')
+        .then(response => response.json())
+        .then(data => {
+            counterElement.innerText = data.count;
+        })
+        .catch(error => {
+            console.error('Erreur compteur:', error);
+            counterElement.innerText = "--";
+        });
+}
