@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ibrahim BENKHERFELLAH</title>
+    <meta name="description" content="Portfolio de Ibrahim BENKHERFELLAH, Data Analyst & Business Analyst en alternance chez Paprec. Étudiant en BUT Science des Données.">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: { extend: { colors: { primary: '#3b82f6' } } }
+        }
+    </script>
+</head>
+<body class="antialiased font-sans">
+
+    <nav id="navbar" class="navbar-full">
+        <div class="nav-limit-container">
+            <div class="nav-flex">
+                <a href="#home" class="nav-logo">
+                    IBRAHIM<span class="text-highlight">.DATA</span>
+                </a>
+                
+                <div class="nav-links-desktop">
+                    <a href="#home" class="nav-link">Accueil</a>
+                    <a href="#about" class="nav-link">À propos</a>
+                    <a href="#skills" class="nav-link">Compétences</a>
+                    <a href="#experience" class="nav-link">Expérience</a>
+                    <a href="#projects" class="nav-link">Projets</a>
+
+                    <div class="nav-separator"></div>
+                    
+                    <button id="theme-toggle" class="btn-theme-toggle">
+                        <i class="fas fa-sun icon-sun"></i>
+                        <i class="fas fa-moon icon-moon"></i>
+                    </button>
+
+                    <div class="view-counter-wrapper">
+                        <i class="fas fa-eye"></i>
+                        <span id="view-counter">chargement...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="hero-name">
+                Ibrahim BENKHERFELLAH
+            </h1>
+            <div class="hero-subtitle">
+                <strong>Je suis <span id="typing-text"></span></strong>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn-secondary">Me contacter</a>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ibrahim-benkherfellah/" target="_blank" class="social-icon linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/darckens" target="_blank" class="social-icon github"><i class="fab fa-github"></i></a>
+                <a href="mailto:ib.benkherfellah@gmail.com" class="social-icon mail"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-standard">
+        <div class="content-wrapper">
+            
+            <h2 class="section-title"><span class="title-underline">À Propos de moi</span></h2>
+            
+            <div class="card-glass about-split-layout">
+                
+                <div class="about-left-side">
+                    <div class="profile-container">
+                        <div class="profile-image-wrapper">
+                            <img src="annexes/photo.JPG" alt="Ibrahim Benkherfellah" class="profile-image">
+                        </div>
+                    </div>
+                    
+                    <div class="about-text">
+                        <p class="mb-4">
+                        Je m’intéresse surtout à la façon dont les outils mathématiques et informatiques peuvent être utilisés pour analyser
+                        des situations complexes et apporter des réponses plus claires.
+                        </p>
+
+                        <p class="mb-4">
+                        J’aime prendre un problème, le découper, regarder ce qui est mesurable, ce qui ne l’est pas, puis essayer de construire
+                        quelque chose de cohérent à partir de ça. Ce n’est pas toujours propre ni évident, mais c’est justement ce travail de
+                        réflexion et d’ajustement qui me plaît.
+                        </p>
+
+                        <p class="mb-4">
+                        En alternance chez <strong>Paprec Group</strong> en tant que <strong>Data &amp; Business Analyst</strong>, je travaille 
+                        sur des sujets variés. Cela me permet de confronter mes méthodes à des contraintes réelles et d’apprendre à adapter 
+                        mes solutions à des besoins précis.
+                        </p>
+                        <a href="annexes/CV_BENKHERFELLAH_Ibrahim.pdf" target="_blank" class="btn-download-cv">
+                            <i class="fas fa-file-download"></i> Télécharger CV
+                        </a>
+                    </div>
+                </div>
+
+                <div class="vertical-separator"></div>
+
+                <div class="about-right-side">
+                    <h3 class="education-title"><i class="fas fa-graduation-cap"></i> Mon Parcours</h3>
+                    
+                    <div class="mini-timeline">
+                        <div class="mini-timeline-item">
+                            <div class="mini-dot dot-primary"></div>
+                            <div class="mini-content">
+                                <span class="mini-date">2024 - En cours</span>
+                                <h4 class="mini-degree">BUT Science des Données</h4>
+                                <p class="mini-school">Université Sorbonne Paris Nord</p>
+                                <p class="mini-desc">Parcours : Exploration et Modélisation Statistique (EMS)</p>
+                            </div>
+                        </div>
+
+                        <div class="mini-timeline-item">
+                            <div class="mini-dot dot-secondary"></div>
+                            <div class="mini-content">
+                                <span class="mini-date">2023 - 2024</span>
+                                <h4 class="mini-degree">Double Licence - Mathématiques et Informatique</h4>
+                                <p class="mini-school">Université Paris Cité (Paris 7 - Diderot)</p>
+                                <p class="mini-desc">Option : Physique Fondamentale</p>
+                            </div>
+                        </div>
+
+                        <div class="mini-timeline-item">
+                            <div class="mini-dot dot-secondary"></div>
+                            <div class="mini-content">
+                                <span class="mini-date">2020 - 2023</span>
+                                <h4 class="mini-degree">Baccalauréat Général</h4>
+                                <p class="mini-school">Lycée Polyvalent Rosa Parks</p>
+                                <p class="mini-desc">Mathématiques / Physique-Chimie / Numériques et Sciences Informatiques (NSI)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="section-separator-line"></div>
+
+            <div class="vision-stack-container">
+                
+                <div class="card-glass vision-row">
+                    <div class="vision-row-icon">
+                        <i class="fas fa-heart text-red-500"></i> </div>
+                    <div class="vision-row-content">
+                        <h3 class="vision-row-title">Pourquoi la Science des Données ?</h3>
+                        <p>
+                            C'est la rencontre entre mes passions : les <strong>mathématiques</strong> et la <strong>résolution de problèmes</strong>.
+                            <br />
+                            La science des données, c’est concret : on part d’un tableau ou d’un fichier, on le nettoie, on le comprend et 
+                            on en tire une décision.
+                            <br /><br />
+                            J'avais tout d'abord hésiter avec le BUT Informatique, mais lors de la journée porte ouverte de l'IUT de Villetaneuse, 
+                            j'ai pu découvrir le programme du BUT SD qui m'a tout de suite plu parce qu’il me permet d'utiliser au quotidien ce que 
+                            j'aime (les mathématiques appliquées et l'informatique décisionnelle) et surtout parce que c’est un monde qui évolue tout 
+                            le temps, où il y a toujours à apprendre.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-glass vision-row">
+                    <div class="vision-row-icon">
+                        <i class="fas fa-graduation-cap text-blue-500"></i> </div>
+                    <div class="vision-row-content">
+                        <h3 class="vision-row-title">Mon objectif</h3>
+                        <p>
+                            Mon but est d'intégrer une <strong>école d'ingénieur</strong> avec une dominante en <strong>Informatique</strong>.
+                            <br /><br />
+                            Vous vous dîtes sûrement <em>"Pourquoi l'informatique pour un matheux ?"</em>.
+                            <br /><br />
+                            Eh bien parce qu'en pratique les mathématiques seules restent théoriques. Pour appliquer mes connaissances et construire 
+                            des modèles robustes, <strong>l'informatique est un outil indispensable</strong>. Je veux mais surtout <strong>IL FAUT</strong> maîtriser la 
+                            technique pour donner vie aux équations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card-glass vision-row">
+                    <div class="vision-row-icon">
+                        <i class="fas fa-briefcase text-green-500"></i> </div>
+                    <div class="vision-row-content">
+                        <h3 class="vision-row-title">Projet professionnel</h3>
+                        <p>
+                            Je souhaite utiliser des outils mathématiques avancés pour résoudre des défis complexes du quotidien.
+                            J'aimerais donc m'orienter vers des métiers d'expertise tels que :
+                        </p>
+                        <div class="vision-tags">
+                            <span class="v-tag">Ingénieur en Optimisation et Recherche Opérationnelle</span>
+                            <span class="v-tag">Ingénieur en Modélisation et Simulation Numérique</span>
+                            <span class="v-tag">Data Scientist</span>
+                            <span class="v-tag">Actuaire</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </section>
+
+    <section id="skills" class="section-standard">
+        <div class="content-wrapper">
+            <h2 class="section-title"><span class="title-underline">Compétences</span></h2>
+            
+            <div class="skills-nav-wrapper">
+                <div class="skills-nav">
+                    <button class="skill-tab active" data-tab="tech">
+                        <i class="fas fa-code"></i> Techniques
+                    </button>
+                    <button class="skill-tab" data-tab="soft">
+                        <i class="fas fa-users-cog"></i> Soft Skills
+                    </button>
+                    <button class="skill-tab" data-tab="lang">
+                        <i class="fas fa-language"></i> Langues
+                    </button>
+                </div>
+            </div>
+
+            <div id="tab-tech" class="skills-content active">
+                <div class="skills-grid">
+                    <div class="card-glass">
+                        <h3 class="skill-category-title"><i class="fas fa-code text-highlight"></i> Programmation</h3>
+                        <div class="skill-badges-wrapper">
+                            <span class="skill-badge"><i class="devicon-python-plain text-yellow-500"></i> Python</span>
+                            <span class="skill-badge"><i class="devicon-pandas-plain colored"></i> Pandas</span>
+                            <span class="skill-badge"><i class="devicon-numpy-plain colored"></i> Numpy</span>
+                            <span class="skill-badge"><i class="devicon-r-plain text-blue-500"></i> R</span>
+                            <span class="skill-badge"><i class="devicon-java-plain text-red-500"></i> Java</span>
+                            <span class="skill-badge"><i class="fas fa-file-code text-green-600"></i> VBA / Macros</span>
+                            <span class="skill-badge"><i class="fas fa-terminal text-gray-400"></i> Bash</span>
+                            <span class="skill-badge"><i class="devicon-powershell-plain text-gray-400"></i> PowerShell</span>
+                        </div>
+                    </div>
+                    <div class="card-glass">
+                        <h3 class="skill-category-title"><i class="fas fa-database text-highlight"></i> Data & BDD</h3>
+                        <div class="skill-badges-wrapper">
+                            <span class="skill-badge"><i class="devicon-azuresqldatabase-plain colored"></i> SQL</span>
+                            <span class="skill-badge"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                            <span class="skill-badge"><i class="devicon-dbeaver-plain colored"></i> DBeaver</span>
+                            <span class="skill-badge"><i class="fas fa-server text-gray-500"></i> ETL & Modelling</span>
+                            <span class="skill-badge"><i class="fas fa-project-diagram text-purple-500"></i> Merise / MCD / MLD</span>
+                            <span class="skill-badge"><i class="fas fa-table text-green-500"></i> Power Query</span>
+                        </div>
+                    </div>
+                    <div class="card-glass">
+                        <h3 class="skill-category-title"><i class="fas fa-chart-pie text-highlight"></i> BI & Visualisation</h3>
+                        <div class="skill-badges-wrapper">
+                            <span class="skill-badge"><i class="fas fa-chart-bar text-yellow-500"></i> Power BI</span>
+                            <span class="skill-badge"><i class="fas fa-code text-yellow-600"></i> DAX</span>
+                            <span class="skill-badge"><i class="devicon-matplotlib-plain text-blue-500"></i> Matplotlib</span>
+                            <span class="skill-badge"><i class="devicon-plotly-plain colored"></i> Plotly</span>
+                            <span class="skill-badge"><i class="fas fa-chart-line text-blue-500"></i> Tableau Desktop</span>
+                            <span class="skill-badge"><i class="fas fa-file-excel text-green-600"></i> Excel Avancé</span>
+                        </div>
+                    </div>
+                    <div class="card-glass">
+                        <h3 class="skill-category-title"><i class="fas fa-brain text-highlight"></i> Analyse & Statistiques</h3>
+                        <div class="skill-badges-wrapper">
+                            <span class="skill-badge"><i class="fas fa-calculator text-red-400"></i> Algèbre / Analyse</span>
+                            <span class="skill-badge"><i class="fa-solid fa-dna text-purple-500"></i> Biostatistiques</span>
+                            <span class="skill-badge"><i class="fas fa-wave-square text-blue-400"></i> Séries Temporelles</span>
+                            <span class="skill-badge"><i class="fas fa-poll text-orange-400"></i> Enquêtes</span>
+                            <span class="skill-badge"><i class="fas fa-robot text-purple-400"></i> Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-soft" class="skills-content">
+                <div class="skills-grid">
+                    <div class="card-glass">
+                        <h3 class="skill-category-title"><i class="fas fa-lightbulb text-yellow-500"></i> Esprit d'analyse</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                            Capacité à transformer des problèmes complexes en questions statistiques concrètes et à interpréter les résultats pour la prise de décision.
+                        </p>
+                    </div>
+                    <div class="card-glass">
+                        <h3 class="skill-category-title"><i class="fas fa-comments text-blue-500"></i> Communication & Vulgarisation</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                            Expérience en restitution de résultats auprès d'interlocuteurs non-techniques (clients, direction) via des dashboards clairs.
+                        </p>
+                    </div>
+                    <div class="card-glass">
+                        <h3 class="skill-category-title"><i class="fas fa-users text-green-500"></i> Travail d'équipe</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                            Habitué à collaborer en mode agile, gestion de conflits (expérience JO 2024 & Bibliothécaire) et partage de connaissances.
+                        </p>
+                    </div>
+                    <div class="card-glass">
+                        <h3 class="skill-category-title"><i class="fas fa-clock text-purple-500"></i> Gestion du temps</h3>
+                        <p class="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                            Organisation rigoureuse nécessaire pour mener de front l'alternance chez Paprec et les études en BUT.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="tab-lang" class="skills-content">
+                <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+                    
+                    <div class="card-glass flex items-center gap-4">
+                        <img src="https://flagcdn.com/fr.svg" alt="France" class="w-12 h-auto rounded shadow-md">
+                        <div class="w-full">
+                            <h3 class="font-bold text-lg">Français</h3>
+                            <p class="text-gray-500">Langue maternelle</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-glass flex items-center gap-4">
+                        <img src="https://flagcdn.com/dz.svg" alt="Algérie" class="w-12 h-auto rounded shadow-md">
+                        <div class="w-full">
+                            <h3 class="font-bold text-lg">Arabe</h3>
+                            <p class="text-gray-500 dark:text-gray-400">Langue maternelle</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-glass flex items-center gap-4">
+                        <img src="https://flagcdn.com/gb.svg" alt="Royaume-Uni" class="w-12 h-auto rounded shadow-md">
+                        <div class="w-full">
+                            <h3 class="font-bold text-lg">Anglais</h3>
+                            <p class="text-gray-500">Niveau B2 (Techniques)</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-glass flex items-center gap-4">
+                        <img src="https://flagcdn.com/es.svg" alt="Espagne" class="w-12 h-auto rounded shadow-md">
+                        <div class="w-full">
+                            <h3 class="font-bold text-lg">Espagnol</h3>
+                            <p class="text-gray-500">Niveau Scolaire / Basique</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5 mt-2 dark:bg-gray-700">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-standard">
+        <div class="content-wrapper">
+            <h2 class="section-title"><span class="title-underline">Expérience Professionnelle</span></h2>
+            
+            <div class="timeline-wrapper">
+                
+                <div class="timeline-nav">
+                    <div class="timeline-line"></div>
+                    
+                    <div class="timeline-step" data-target="exp-1">
+                        <div class="step-preview">
+                            <span class="preview-date">Juil - Août 2024</span>
+                            <h4 class="preview-title">Employé Polyvalent</h4>
+                            <span class="preview-contract badge-orange">CDD (JO 2024)</span>
+                        </div>
+                        <div class="step-dot"></div>
+                    </div>
+
+                    <div class="timeline-step" data-target="exp-2">
+                        <div class="step-preview">
+                            <span class="preview-date">Sept 2023 - En Cours</span>
+                            <h4 class="preview-title">Assistant Bibliothécaire</h4>
+                            <span class="preview-contract badge-orange">CDD (Job Étudiant)</span>
+                        </div>
+                        <div class="step-dot"></div>
+                    </div>
+
+                    <div class="timeline-step active" data-target="exp-3">
+                        <div class="step-preview">
+                            <span class="preview-date">Sept 2025 - En Cours</span>
+                            <h4 class="preview-title">Data & Business Analyst</h4>
+                            <span class="preview-contract badge-purple">Alternance</span>
+                        </div>
+                        <div class="step-dot"></div>
+                    </div>
+                </div>
+
+                <div class="timeline-content-area">
+                    
+                    <div id="exp-3" class="exp-detail-card active">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Data & Business Analyst</h3>
+                                <h4 class="exp-company text-highlight">PAPREC GROUP - La Courneuve</h4>
+                            </div>
+                        </div>
+                        <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">Service commercial <strong>Grands Comptes Industries</strong></p>
+                        <ul class="exp-list">
+                            <li class="exp-item">
+                                <span class="v-tag">Assurer la migration et la transformation des données via des <strong>processus ETL</strong>.</span>
+                            </li>
+                            <li class="exp-item">
+                                <span class="v-tag">Élaborer, automatiser et optimiser des solutions <strong>Excel avancées (VBA, Power Query)</strong>.</span>
+                            </li>
+                            <li class="exp-item">
+                                <span class="v-tag">Développer des <em><strong>data models</strong></em> et des mesures <em>DAX</em> optimisées.</span>
+                            </li>
+                            <li class="exp-item">
+                                <span class="v-tag">Concevoir et déployer des <strong><em>dashboards</em> Power BI</strong>.</span>
+                            </li>
+                            <li class="exp-item">
+                                <span class="v-tag"><strong>Présenter et restituer</strong> les outils et reportings auprès des équipes et clients.</span>
+                            </li>
+                            <li class="exp-item">
+                                <span class="v-tag">Impulser une démarche d’<strong>amélioration continue</strong> en optimisant les outils du service.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="exp-2" class="exp-detail-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Assistant Bibliothécaire</h3>
+                                <h4 class="exp-company text-highlight">Plaine Commune (Médiathèques)</h4>
+                            </div>
+                        </div>
+                        <p class="mb-4 text-sm text-gray-500 dark:text-gray-400">Je travaille les week-ends, de septembre à juillet, au sein des médiathèques 
+                            du pôle Saint-Denis / Saint-Ouen de Plaine Commune. <br />
+                            J’interviens principalement à la médiathèque Persépolis et à la médiathèque du Centre-Ville de Saint-Denis.
+                        </p>
+                        <ul class="exp-list">
+                            <li class="exp-item"><span class="v-tag">Accueil, orientation et accompagnement du public,</span></li>
+                            <li class="exp-item"><span class="v-tag">Gestion des prêts et retours, flux de documents, inscriptions,</span></li>
+                            <li class="exp-item"><span class="v-tag">Rangement, classement et mise en valeur des collections,</span></li>
+                            <li class="exp-item"><span class="v-tag">Soutien aux animations culturelles et aux actions de médiation,</span></li>
+                            <li class="exp-item"><span class="v-tag">Contribution au bon fonctionnement et à la qualité du service public.</span></li>
+                        </ul>
+                    </div>
+
+                    <div id="exp-1" class="exp-detail-card">
+                        <div class="exp-header">
+                            <div>
+                                <h3 class="exp-title">Employé Polyvalent (JO 2024)</h3>
+                                <h4 class="exp-company text-highlight">Sodexo Live! - Paris</h4>
+                            </div>
+                        </div>
+                        <ul class="exp-list">
+                            <li class="exp-item"><span class="v-tag">Caissier lors des Jeux Olympiques de Paris 2024.</span></li>
+                            <li class="exp-item"><span class="v-tag">Gestion de flux importants et service client en environnement international.</span></li>
+                            <li class="exp-item"><span class="v-tag">Travail en équipe et gestion du stress.</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-standard">
+        <div class="content-wrapper">
+            <h2 class="section-title">
+                <span class="title-underline">Projets Réalisés</span>
+            </h2>
+            
+            <div class="filters-container">
+                <button class="filter-btn active" data-filter="all">Tout</button>
+                <button class="filter-btn" data-filter="ems">Stat & ML</button>
+                <button class="filter-btn" data-filter="dev">Dev & App</button>
+                <button class="filter-btn" data-filter="bi">BI & Dataviz</button>
+                <button class="filter-btn" data-filter="data">Data & SQL</button>
+            </div>
+
+            <div class="carousel-container">
+                
+                <button class="nav-btn prev-btn" id="prevBtn" aria-label="Précédent">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel-dots" id="projectDots" aria-label="Pagination projets"></div>
+
+                <div class="carousel-track" id="track">
+                    
+                    <div class="project-card" data-category="ems">
+                        <div class="project-header gradient-pink">
+                            <i class="fas fa-dna project-icon"></i>
+
+                             <a href="https://github.com/Darckens/SAE-S2.03" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i>
+                                <span>Voir le code</span>
+                            </a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Biostatistiques & IA</h3>
+                            <p class="project-subtitle">BUT SD · Python & Scikit-learn</p>
+
+                            <p class="project-desc">
+                                Approche <strong>biostatistique</strong> appliquée aux données médicales (Cancer du sein).
+                                Étude des corrélations par <strong>Régression Linéaire</strong> et diagnostic prédictif par 
+                                <strong>Régression Logistique</strong>. Optimisation par réduction de dimension 
+                                (<strong>ACP</strong>) et <strong>Clustering</strong>.
+                            </p>
+
+                            <div class="project-tags">
+                                <span class="tag">Biostatistiques</span>
+                                <span class="tag">Régression</span>
+                                <span class="tag">ACP/Clustering</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="bi">
+                        <div class="project-header gradient-green">
+                            <i class="fas fa-leaf project-icon"></i>
+
+                            <div class="project-btn confidential">
+                                <i class="fas fa-lock"></i>
+                                <span>Confidentiel</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Bilan Carbone Automatisé – GC</h3>
+                            <p class="project-subtitle">Alternance · Paprec Group</p>
+
+                            <p class="project-desc">
+                                Développement d’un outil <strong>Power BI</strong> pour le calcul
+                                automatisé du <strong>bilan carbone</strong> des clients Grands Comptes.
+                                Utilisation avancée du <strong>Langage M</strong> et <strong>DAX</strong> pour 
+                                analyser les émissions de CO2 (générées et évitées) et proposer des axes d’amélioration.
+                            </p>
+
+                            <div class="project-tags">
+                                <span class="tag">Langage M</span>
+                                <span class="tag">Power Query</span>
+                                <span class="tag">DAX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="project-card" data-category="ems">
+                        <div class="project-header gradient-blue">
+                            <i class="fas fa-wave-square project-icon"></i>
+
+                             <a href="annexes/SAE_303_SERIE_TEMPORELLE.pdf" target="_blank" class="project-btn">
+                                <i class="fa-solid fa-file-pdf" style="color: #ef4444;"></i>
+                                <span>Voir le rapport</span>
+                            </a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Analyse de Séries Temporelles</h3>
+                            <p class="project-subtitle">BUT SD · Python & R</p>
+                            
+                            <p class="project-desc">
+                                Modélisation de processus stochastiques par l'approche de <strong>Box-Jenkins</strong>.
+                                Tests de stationnarité, identification et estimation de modèles <strong>ARIMA</strong>.
+                                Validation par analyse des résidus et comparaison avec le <strong>Lissage Exponentiel</strong> pour la prévision.
+                            </p>
+                            
+                            <div class="project-tags">
+                                <span class="tag">Python / R</span>
+                                <span class="tag">ARIMA</span>
+                                <span class="tag">Forecasting</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="dev ems">
+                        <div class="project-header gradient-orange">
+                            <i class="fas fa-laptop-code project-icon"></i>
+
+                            <a href="https://ibrahim-benkherfellah.shinyapps.io/ESWD-Dashboard/" target="_blank" class="project-btn">
+                                <i class="devicon-r-plain colored"></i>
+                                <span>Voir l'appli</span>
+                            </a>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Application R-Shiny</h3>
+                            <p class="project-subtitle">BUT SD · Web Data & ML</p>
+                            
+                            <p class="project-desc">
+                                Conception d'une Application Intéractif pour l'analyse et la visualisation dynamique 
+                                de <strong>données climatiques</strong>. Intégration de modèles de 
+                                <strong>Machine Learning</strong> via le package <strong>caret</strong> et visualisation 
+                                dynamique des résultats.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">R</span>
+                                <span class="tag">R-Shiny</span>
+                                <span class="tag">Caret / ML</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="dev">
+                        <div class="project-header gradient-purple">
+                            <i class="fas fa-file-code project-icon"></i>
+
+                            <a href="https://github.com/Darckens/SAE-S1.02" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i>
+                                <span>Voir le code</span>
+                            </a>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Lecture & Écriture de Fichiers</h3>
+                            <p class="project-subtitle">BUT SD · Python</p>
+
+                            <p class="project-desc">
+                                Développement d’un programme Python permettant de lire, transformer et écrire
+                                des fichiers texte clients selon des spécifications précises.  
+                                Le projet simule un contexte de <strong>migration et intégration de données</strong>,
+                                avec génération de statistiques exploitables.
+                            </p>
+
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Data Processing</span>
+                                <span class="tag">Fichiers Texte</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="dev bi">
+                        <div class="project-header gradient-green">
+                            <i class="fas fa-file-excel project-icon"></i>
+
+                            <div class="project-btn confidential">
+                                <i class="fas fa-lock"></i>
+                                <span>Confidentiel</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Automatisation Excel – GC</h3>
+                            <p class="project-subtitle">Alternance · Paprec Group</p>
+
+                            <p class="project-desc">
+                                Automatisation d’outils <strong>Excel avancés</strong> pour le suivi commercial
+                                des <strong>Grands Comptes</strong>. Intégration de données via
+                                <strong>Power Query</strong> et développement de macros <strong>VBA</strong>
+                                pour fiabiliser et accélérer les analyses.
+                            </p>
+
+                            <div class="project-tags">
+                                <span class="tag">Excel Avancé</span>
+                                <span class="tag">VBA</span>
+                                <span class="tag">Power Query / Pivot</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="bi">
+                        <div class="project-header gradient-orange">
+                            <i class="fas fa-chart-pie project-icon"></i>
+                            
+                            <div class="project-btn confidential">
+                                <i class="fas fa-lock"></i>
+                                <span>Confidentiel</span>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Reporting Power BI – GC</h3>
+                            <p class="project-subtitle">Alternance · Paprec Group</p>
+
+                            <p class="project-desc">
+                                <strong>Migration des suivis Excel</strong> vers une solution BI automatisée 
+                                et <strong>conception <em>from scratch</em></strong> de dashboards pour les nouveaux clients. 
+                                Mise en place d'un <strong>modèle de données</strong> et développement de mesures 
+                                <strong>DAX</strong> pour l'aide à la décision.
+                            </p>
+
+                            <div class="project-tags">
+                                <span class="tag">Power BI</span>
+                                <span class="tag">Migration Excel</span>
+                                <span class="tag">DAX / Modeling</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="data">
+                        <div class="project-header gradient-purple">
+                            <i class="fas fa-database project-icon"></i>
+
+                             <a href="https://github.com/Darckens/SAE-S2.01" target="_blank" class="project-btn">
+                                <i class="fab fa-github"></i>
+                                <span>Voir le code</span>
+                            </a>
+                        </div>
+
+                        <div class="project-content">
+                            <h3 class="project-title">Base de Données Relationnelle</h3>
+                            <p class="project-subtitle">BUT SD · SQL & PostgreSQL</p>
+
+                            <p class="project-desc">
+                                Modélisation complète : passage du <strong>Schéma Entité-Association</strong> 
+                                au <strong>Modèle Relationnel</strong> normalisé.
+                                Implémentation sous PostgreSQL et écriture de requêtes sur des données du commerce international.
+                            </p>
+
+                            <div class="project-tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">Merise / MCD / MLD</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="nav-btn next-btn" id="nextBtn" aria-label="Suivant">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+            </div>
+        </div>
+    </section>
+  
+    <section id="contact" class="section-standard">
+        <div class="content-wrapper">
+            
+            <div class="contact-container">
+                
+                <h2 class="section-title" style="margin-bottom: 1rem;">Restons en contact</h2>
+                
+                <p class="contact-subtitle">
+                    Ouvert aux opportunités et aux échanges sur la Data Science et surtout les <strong>Mathématiques</strong> !
+                </p>
+                
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ibrahim-benkherfellah/" target="_blank" class="social-icon linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/darckens" target="_blank" class="social-icon github" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:ib.benkherfellah@gmail.com" class="social-icon mail" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <footer>
+                    <p>&copy; 2025 Ibrahim BENKHERFELLAH.</p>
+                </footer>
+
+            </div>
+        </div>
+    </section>
+
+    <a href="#home" class="scroll-top-btn" id="scroll-top" aria-label="Remonter en haut">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
